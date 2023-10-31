@@ -1,8 +1,10 @@
--- This way of creation of table named Second_table in hbtn_0c_0
-USE hbtn_0c_0;
-CREATE TABLE IF NOT EXISTS second_table(id INT, name VARCHAR(256), score INT);
+-- Script to create the table second_table and add multiple rows in the hbtn_0c_0 database in MySQL server
 
-INSERT INTO second_table  VALUES (1, 'John', 10);
-INSERT INTO second_table  VALUES(2, 'Alex', 3);
-INSERT INTO second_table  VALUES(3, 'Bob', 14);
-INSERT INTO second_table  VALUES(4, 'George', 8);
+-- Create table second_table and add properties    
+CREATE TABLE IF NOT EXISTS second_table (id int, name VARCHAR(256), score INT);
+
+-- Create multiple records 
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES (1, "John", 10);
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES (2, "Alex", 3);
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES (3, "Bob", 14);
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES (4, "George", 8);
